@@ -4,7 +4,7 @@
 2. Frontend Part:
    As my database is getting updated live, so I am just making requests from frontend to get these updated values from the database every 5 seconds.
 
-Note: For now, I am only wrote code for getting 5 stocks(GOOGLE, MICROSOFT, TESLA, NVIDIA and APPLE) but didn't implement changing stock feature as I saw your email lately and did not have time to implement & submit.
+Note: You can observe real time updates when the US market is open. For now, I am only wrote code for getting 5 stocks(GOOGLE, MICROSOFT, TESLA, NVIDIA and APPLE) but didn't implement changing stock feature as I saw your email lately and did not have time to implement & submit.
 
 How to run the application:
 
