@@ -2,18 +2,17 @@ const express = require("express");
 const { Request, Response } = express;
 const StockData = require("../models/StockData");
 
-// Define the getStockData function
 const getStockData = async (req: typeof Request, res: typeof Response) => {
   console.log(
     "-----------------------------------In backend getStockData API ---------------------------",
     req.params
   );
   try {
-    const { symbol } = req.params; // req.params should be properly typed now
+    const { symbol } = req.params;
     const data = await StockData.find({ symbol })
       .sort({ timestamp: -1 })
       .limit(20);
-    res.status(200).json(data); // res.status should be properly typed now
+    res.status(200).json(data);
     console.log(data);
   } catch (error) {
     const err = error as Error;
@@ -21,9 +20,4 @@ const getStockData = async (req: typeof Request, res: typeof Response) => {
   }
 };
 
-// const getAllStocksData = async (req: typeof Request, res: typeof Response) => {
-
-// }
-
-// Export the function
 module.exports = { getStockData };

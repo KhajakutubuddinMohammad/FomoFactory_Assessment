@@ -25,8 +25,8 @@ const start = async () => {
     console.log("Database connected successfully.");
 
     // Initialize WebSocket logic and wait until it's ready
-    // initializeWebSocket();
-    // console.log("WebSocket logic initialized.");
+    initializeWebSocket();
+    console.log("WebSocket logic initialized.");
 
     // Ensure to call addStock and removeStock after WebSocket is ready
     // setTimeout(async () => {
